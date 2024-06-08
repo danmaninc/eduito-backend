@@ -20,6 +20,10 @@ class User(UserBase):
     is_verified: bool
 
 
+class UserGet(BaseModel):
+    id: int
+
+
 class UserGetResponse(BaseModel):
     id: int
     username: str
